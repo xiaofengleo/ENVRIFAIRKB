@@ -1,0 +1,426 @@
+@prefix : <http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69> .
+
+<http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#CSV
+:CSV rdf:type owl:Class ;
+     rdfs:subClassOf :format .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#DOI
+:DOI rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Data
+:Data rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Data_Portal
+:Data_Portal rdf:type owl:Class ;
+             rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Database
+:Database rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Domain
+:Domain rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#DwC
+:DwC rdf:type owl:Class ;
+     rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#EML
+:EML rdf:type owl:Class ;
+     rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#EUDAT
+:EUDAT rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Earth
+:Earth rdf:type owl:Class ;
+       rdfs:subClassOf :Domain .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#ElasticSearch
+:ElasticSearch rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#FAIRness
+:FAIRness rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#FILE
+:FILE rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#GitHub
+:GitHub rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Google_Analytics
+:Google_Analytics rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Google_Dataset_Search
+:Google_Dataset_Search rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Handle
+:Handle rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Handle_PD_Suffix
+:Handle_PD_Suffix rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#ICOS
+:ICOS rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#ISO_19115
+:ISO_19115 rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#JSON
+:JSON rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#JSON-LD
+:JSON-LD rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Knowledge_Representation_Language
+:Knowledge_Representation_Language rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#LifeWatch
+:LifeWatch rdf:type owl:Class ;
+           rdfs:subClassOf :marine .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#LifeWatch_Virtual_lab
+:LifeWatch_Virtual_lab rdf:type owl:Class ;
+                       rdfs:subClassOf :LifeWatch .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#MS_SQL
+:MS_SQL rdf:type owl:Class ;
+        rdfs:subClassOf :Database .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#MySQL
+:MySQL rdf:type owl:Class ;
+       rdfs:subClassOf :Database .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#NetCDF
+:NetCDF rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#ORCID
+:ORCID rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#OWL
+:OWL rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#OpenAccessMetadata
+:OpenAccessMetadata rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#OracleDB
+:OracleDB rdf:type owl:Class ;
+          rdfs:subClassOf :Database .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#PID
+:PID rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#RDF
+:RDF rdf:type owl:Class ;
+     rdfs:subClassOf :Repository .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#RI
+:RI rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Repository
+:Repository rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#TXT
+:TXT rdf:type owl:Class ;
+     rdfs:subClassOf :format .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#atmosphere
+:atmosphere rdf:type owl:Class ;
+            rdfs:subClassOf :Domain .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_center
+:data_center rdf:type owl:Class ;
+             rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_explorer
+:data_explorer rdf:type owl:Class ;
+               rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_format
+:data_format rdf:type owl:Class ;
+             rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_generation_tools
+:data_generation_tools rdf:type owl:Class ;
+                       rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_license_in_use
+:data_license_in_use rdf:type owl:Class ;
+                     rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_originator
+:data_originator rdf:type owl:Class ;
+                 rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_policy
+:data_policy rdf:type owl:Class ;
+             rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_process
+:data_process rdf:type owl:Class ;
+              rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_provider
+:data_provider rdf:type owl:Class ;
+               rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_quality_control
+:data_quality_control rdf:type owl:Class ;
+                      rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_repository
+:data_repository rdf:type owl:Class ;
+                 rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_security
+:data_security rdf:type owl:Class ;
+               rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_usage
+:data_usage rdf:type owl:Class ;
+            rdfs:subClassOf :Data .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#data_usage_license
+:data_usage_license rdf:type owl:Class ;
+                    rdfs:subClassOf :data_usage .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#date
+:date rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#email
+:email rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#filechecksum
+:filechecksum rdf:type owl:Class ;
+              rdfs:subClassOf :FILE .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#filelocation
+:filelocation rdf:type owl:Class ;
+              rdfs:subClassOf :FILE .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#format
+:format rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#image
+:image rdf:type owl:Class ;
+       rdfs:subClassOf :format .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#isMachineActionable
+:isMachineActionable rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#landing_page
+:landing_page rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#location
+:location rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#machine_accessibility
+:machine_accessibility rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#marine
+:marine rdf:type owl:Class ;
+        rdfs:subClassOf :Domain .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#marine_id
+:marine_id rdf:type owl:Class ;
+           rdfs:subClassOf :marine .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#marine_regions
+:marine_regions rdf:type owl:Class ;
+                rdfs:subClassOf :marine .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#meadata
+:meadata rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_checking
+:metadata_checking rdf:type owl:Class ;
+                   rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_extraction
+:metadata_extraction rdf:type owl:Class ;
+                     rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_import
+:metadata_import rdf:type owl:Class ;
+                 rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_publication
+:metadata_publication rdf:type owl:Class ;
+                      rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_repository
+:metadata_repository rdf:type owl:Class ;
+                     rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_template
+:metadata_template rdf:type owl:Class ;
+                   rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_types
+:metadata_types rdf:type owl:Class ;
+                rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadata_validation
+:metadata_validation rdf:type owl:Class ;
+                     rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#metadta_data_repositpry
+:metadta_data_repositpry rdf:type owl:Class ;
+                         rdfs:subClassOf :meadata .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#modeldataobservation
+:modeldataobservation rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#modelling
+:modelling rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#modellingdatatools
+:modellingdatatools rdf:type owl:Class ;
+                    rdfs:subClassOf :modelling .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#mongoDB
+:mongoDB rdf:type owl:Class ;
+         rdfs:subClassOf :Database .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#sound_files
+:sound_files rdf:type owl:Class ;
+             rdfs:subClassOf :format .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#spark
+:spark rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#spqrql
+:spqrql rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#taxonomy
+:taxonomy rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#vocabulary
+:vocabulary rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#EPOS
+:EPOS rdf:type owl:NamedIndividual ,
+               :RI .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#Euro-Argo
+:Euro-Argo rdf:type owl:NamedIndividual ,
+                    :RI .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#GEOPortal
+:GEOPortal rdf:type owl:NamedIndividual ,
+                    :Data_Portal ,
+                    :RI .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#IODE_Ocean_Data_Portal
+:IODE_Ocean_Data_Portal rdf:type owl:NamedIndividual ,
+                                 :Data_Portal .
+
+
+###  http://www.semanticweb.org/admin/ontologies/2019/9/untitled-ontology-69#SKOS
+:SKOS rdf:type owl:NamedIndividual ,
+               :RI .
+
+
+###  Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi
